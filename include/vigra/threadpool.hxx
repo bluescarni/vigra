@@ -36,10 +36,13 @@
 #ifndef VIGRA_THREADPOOL_HXX
 #define VIGRA_THREADPOOL_HXX
 
-#define THREADPOOL_ENCLOSING_NAMESPACE vigra
-
 #include "stp/threadpool.hxx"
 
-#undef THREADPOOL_ENCLOSING_NAMESPACE
+namespace vigra
+{
+
+using namespace threadpool;
+
+}
 
 #endif
